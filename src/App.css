@@ -1,0 +1,268 @@
+.App {
+  /* text-align: center;  */
+  display: flex;
+  background-color: grey;
+  min-height: 100vh; 
+  /* align-items: center;
+  justify-content: center;  */
+}
+ /* .auth-form-container{
+  display: flex;
+  flex-direction: column;
+}
+.login-form{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 75vh;
+  height: 75vh;
+  left: 5vh;
+  top: 20vh;
+}
+h1{
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+text-align: right;
+position: absolute;
+width: 110px;
+height: 36px;
+left: 278px;
+top: 50px;
+}
+.user{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+position: absolute;
+width: 77px;
+height: 18px;
+left: 101px;
+top: 150px;
+}
+.user-input{
+  position: absolute;
+  width: 370px;
+  left: 185.5px;
+  top: 185px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  
+}
+.pass{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  position: absolute;
+  width: 73px;
+  height: 18px;
+  left: 101px;
+  top: 250px;
+}
+.pass-input{
+  position: absolute;
+  width: 370px;
+  left: 185.5px;
+  top: 280px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.login-btn{
+  color: white;
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  left: 365px;
+  top: 400px;
+  background-color: #393E46;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+}
+.link-btn{
+  position: absolute;
+  width: 15rem;
+  left: 265px;
+  top: 675px;
+  background:none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  border: none;
+} */
+/* right side */
+ /* .right{
+  display: flex;
+} 
+ .right img{
+  position: absolute;
+  width: 113.5vh;
+  height: 100vh;
+  left: 86.3vh; 
+  margin-top: 0;
+  top: 0px;
+}  */
+
+
+/* HomePage */
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.container{
+  display: flex;
+}
+
+main{
+  width: 100%;
+  padding: 20px;
+}
+.sidebar{
+  background: #393E46;
+  color: white;
+  height: 200vh;
+}
+.topsection{
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+.logo{
+  font-size: 25px;
+  padding: 30px 20px ;
+}
+.link{
+  display: flex;
+  color: white;
+  padding: 10px 55px;
+  gap: 15px;
+  transition: all 0,5s;
+}
+.link:hover{
+  background-color: white;
+  width: 15px;
+  color: black;
+  border-radius: 15px;
+}
+.container-home{
+  display: flex;
+  background-color: white;
+  position: absolute;
+  width: 150vh;
+  height: 75vh;
+  left: 30vh;
+  top: 12vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+}
+.container-home h1{
+  position: absolute;
+  width: 200px;
+  height: 24px;
+  left: 5rem;
+  top: 50px;
+
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.menu-1{
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  left: 7rem;
+  top: 100px;
+background: #FFFFFF;
+border: 0.5px solid #000000;
+border-radius: 7px;
+}
+.menu-1 object svg{
+  width: 100px;
+}
+.menu-2{
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  left: 23rem;
+  top: 100px;
+
+background: #FFFFFF;
+border: 0.5px solid #000000;
+border-radius: 7px;
+}
+.menu-3{
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  left: 40rem;
+  top: 100px;
+
+background: #FFFFFF;
+border: 0.5px solid #000000;
+border-radius: 7px;
+}
+.menu-4{
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  left: 57rem;
+  top: 100px;
+
+  background: #FFFFFF;
+border: 0.5px solid #000000;
+border-radius: 7px;
+}
+.pict-1{
+  position: absolute;
+  width: 153.67px;
+  height: 95.68px;
+  left: 5rem;
+  top: 250px;
+
+
+  background: #000000;
+  border-radius: 15px;
+}
+.pict-2{
+  position: absolute;
+  width: 153.67px;
+  height: 95.68px;
+  left: 5rem;
+  top: 400px;
+
+  background: #000000;
+  border-radius: 15px;
+}
+.ttl-plng{
+  position: absolute;
+  width: 60vh;
+height: 13vh;
+left: 3rem;
+top: 80vh;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+.ttl-psn{
+  position: absolute;
+  width: 60vh;
+  height: 13vh;
+  left: 85vh;
+  top: 80vh;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+}
+
+
