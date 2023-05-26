@@ -1,16 +1,16 @@
 .App {
   /* text-align: center;  */
   display: flex;
-  background-color: grey;
+  background-color: white;
   min-height: 100vh; 
   /* align-items: center;
   justify-content: center;  */
 }
- /* .auth-form-container{
+  .auth-form-container{
   display: flex;
   flex-direction: column;
 }
-.login-form{
+.login-form, .regis-form{
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -27,7 +27,7 @@ line-height: 36px;
 text-transform: uppercase;
 text-align: right;
 position: absolute;
-width: 110px;
+width: 120px;
 height: 36px;
 left: 278px;
 top: 50px;
@@ -95,23 +95,107 @@ top: 150px;
   text-decoration: underline;
   cursor: pointer;
   border: none;
-} */
+} 
 /* right side */
- /* .right{
+  .right{
   display: flex;
 } 
  .right img{
   position: absolute;
-  width: 113.5vh;
+  width: 119.7vh;
   height: 100vh;
   left: 86.3vh; 
   margin-top: 0;
   top: 0px;
-}  */
+} 
+.email{
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 18px;
+position: absolute;
+width: 77px;
+height: 18px;
+left: 101px;
+top: 150px;
+}
+.email-inp{
+  position: absolute;
+  width: 370px;
+  left: 185.5px;
+  top: 180px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.user-regis{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  position: absolute;
+  width: 73px;
+  height: 18px;
+  left: 101px;
+  top: 250px;
+}
+.user-inp{
+  position: absolute;
+  width: 370px;
+  left: 185.5px;
+  top: 280px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.pass-regis{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  position: absolute;
+  width: 73px;
+  height: 18px;
+  left: 101px;
+  top: 350px;
+}
+.pass-inp{
+  position: absolute;
+  width: 370px;
+  left: 185.5px;
+  top: 380px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.regis-btn{
+  color: white;
+  position: absolute;
+  width: 160px;
+  height: 50px;
+  left: 365px;
+  top: 450px;
+  background-color: #393E46;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+}
+.link-btn2{
+  position: absolute;
+  width: 15rem;
+  left: 265px;
+  top: 720px;
+  background:none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  border: none;
+}
+/* Register Form */
 
 
 /* HomePage */
-*{
+/* *{
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -141,13 +225,12 @@ main{
 .link{
   display: flex;
   color: white;
-  padding: 10px 55px;
+  padding: 10px 55px; 
   gap: 15px;
   transition: all 0,5s;
 }
 .link:hover{
   background-color: white;
-  width: 15px;
   color: black;
   border-radius: 15px;
 }
@@ -190,6 +273,13 @@ border-radius: 7px;
   height: 50px;
   margin-top: 13px;
 }
+.text-1{
+  position: absolute;
+width: 52.28px;
+height: 24px;
+left: 115px;
+top: 185px;
+}
 .menu-2{
   position: absolute;
   width: 100px;
@@ -205,6 +295,13 @@ border-radius: 7px;
   width: 100px;
   height: 45px;
   margin-top: 17px;
+}
+.text-2{
+  position: absolute;
+  width: 52.28px;
+  height: 24px;
+  left: 625px;
+  top: 185px;
 }
 .menu-3{
   position: absolute;
@@ -222,10 +319,12 @@ border-radius: 7px;
   height: 40px;
   margin-top: 18px;
 }
-.menu-4 svg{
-  width: 100px;
-  height: 40px;
-  margin-top: 18px;
+.text-3{
+  position: absolute;
+  width: 52.28px;
+  height: 24px;
+  left: 750px;
+  top: 185px;
 }
 .menu-4{
   position: absolute;
@@ -238,6 +337,18 @@ border-radius: 7px;
 border: 0.5px solid #000000;
 border-radius: 7px;
 }
+.menu-4 svg{
+  width: 100px;
+  height: 40px;
+  margin-top: 18px;
+}
+.text-4{
+  position: absolute;
+  width: 75px;
+  height: 24px;
+  left: 950px;
+  top: 185px;
+}
 .pict-1{
   position: absolute;
   width: 153.67px;
@@ -245,8 +356,6 @@ border-radius: 7px;
   left: 5rem;
   top: 250px;
 
-
-  background: #000000;
   border-radius: 15px;
 }
 .pict-2{
@@ -256,19 +365,106 @@ border-radius: 7px;
   left: 5rem;
   top: 400px;
 
-  background: #000000;
   border-radius: 15px;
+}
+.text-5{
+  position: absolute;
+width: 207.53px;
+height: 28.99px;
+left: 250px;
+top: 250px;
+}
+.text-6{
+  position: absolute;
+  width: 207.53px;
+  height: 28.99px;
+  left: 250px;
+  top: 400px;
+}
+.text-7{
+  position: absolute;
+width: 207.53px;
+height: 28.99px;
+left: 625px;
+top: 290px;
+}
+.text-8{
+  position: absolute;
+  width: 207.53px;
+  height: 28.99px;
+  left: 625px;
+  top: 430px; 
+}
+.text-9{
+  position: absolute;
+  width: 207.53px;
+  height: 28.99px;
+  left: 750px;
+  top: 290px; 
+}
+.text-10{
+  position: absolute;
+  width: 207.53px;
+  height: 28.99px;
+  left: 750px;
+  top: 430px;
+}
+.text-11{
+  position: absolute;
+  width: 207.53px;
+  height: 28.99px;
+  left: 950px;
+  top: 290px;
+}
+.text-12{
+  position: absolute;
+  width: 207.53px;
+  height: 28.99px;
+  left: 950px;
+  top: 430px;
 }
 .ttl-plng{
   position: absolute;
   width: 60vh;
-height: 13vh;
-left: 3rem;
-top: 80vh;
+  height: 13vh;
+  left: 3rem;
+  top: 80vh;
 
 background: #FFFFFF;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 border-radius: 5px;
+}
+.jmlh-plg{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  left: 100px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+.txt-plg{
+  position: absolute;
+  width: 130px;
+  height: 25px;
+  top: 50px;
+  left: 100px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+.ttl-plng svg{
+  width: 75px;
+  height: 73px;
+  color: #FFFFFF;
+  margin-top: 2.5vh;
+  margin-left: 15px;
+
+  background-color: #393E46;
+  border-radius: 5px;
 }
 .ttl-psn{
   position: absolute;
@@ -281,5 +477,39 @@ background: #FFFFFF;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 border-radius: 5px;
 }
+.jmlh-psn{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  left: 100px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+.txt-psn{
+  position: absolute;
+  width: 130px;
+  height: 25px;
+  top: 50px;
+  left: 100px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+.ttl-psn svg{
+  width: 75px;
+  height: 73px;
+  color: #FFFFFF;
+  margin-top: 2.5vh;
+  margin-left: 15px;
+
+  background-color: #393E46;
+  
+  border-radius: 5px;
+} */
+
 
 

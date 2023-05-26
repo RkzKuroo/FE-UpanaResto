@@ -4,8 +4,9 @@ import './App.css';
 import { Login } from"./Login";
 import { Register } from"./Register";
 import Sidebar from './components/Sidebar';
-import Home from './pages/Home.jsx';
-import Post from './pages/Post.jsx';
+import Home from './pages/Home.js';
+import Post from './pages/Post.js';
+
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
 
@@ -14,7 +15,11 @@ function App() {
   }
   return (
     <div className="App">
-      <BrowserRouter>
+       {
+        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
+        } 
+
+       {/* <BrowserRouter>
       <Sidebar>
       <Routes>
       <Route path="/"element={<Home/>}/>
@@ -25,18 +30,8 @@ function App() {
   
         </Routes>  
         </Sidebar>
-      </BrowserRouter> 
-
-
-
-
-
-
-
-      {/* {
-        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
-      }  */}
-      
+      </BrowserRouter>   */}
+    
     </div>
   );
 }
